@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frizerski salon Crveni</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+ <!-- naslov 1 -->
+    <h1>Dobrodošli u frizerski salon <span class="crveni">Crveni</span>!</h1>
+    <!-- naslov 2 -->
+    <h2>Zakažite svoj termin</h2>
+    <!-- forme -->
+    <form action="/booking" method="post">
+      <label for="ime">Ime:</label>
+      <input type="text" id="ime" name="ime" placeholder="Unesite svoje ime" required>
+      <label for="prezime">Prezime:</label>
+      <input type="text" id="prezime" name="prezime" placeholder="Unesite svoje prezime" required>
+      <br>
+    
+      <label for="broj_telefona">Broj telefona:</label>
+      <br>
+      <input type="tel" id="broj_telefona" name="broj_telefona" placeholder="Unesite svoj broj telefona" required>
+      <br> <br>
+      <label for="usluga">Izaberite uslugu:</label>
+<select name="usluga" id="usluga" required>
+  <option value="sisanje" label="Šišanje - 1000 RSD">Šišanje</option>
+  <option value="sisanje_masinicom" label="Šišanje mašinicom - 800 RSD">Šišanje mašinicom</option>
+  <option value="sisanje_do_glave" label="Šišanje do glave - 1200 RSD">Šišanje do glave</option>
+  <option value="skracivanje_brade" label="Skraćivanje brade - 500 RSD">Skraćivanje brade</option>
+  <option value="brijanje" label="Brijanje - 700 RSD">Brijanje</option>
+</select>
+      <br><br>
+      <label for="frizer">Izaberite frizera:</label>
+<select name="frizer" id="frizer" required>
+  <option value="Sale" label="Sale">Sale</option>
+  <option value="Vukan" label="Vukan">Vukan</option>
+  <option value="Crveni" label="Crveni">Crveni</option>
+</select>
+
+
+      <br> <br>
+      <label for="datum">Izaberite datum:</label>
+      <br>
+      <input type="date" id="datum" name="datum" placeholder="dd.mm.yyyy" required>
+      <br> <br>
+      <label for="vreme">Izaberite vreme:</label>
+<br>
+<select name="vreme" id="vreme" required>
+  <option value="08:00">08:00</option>
+  <option value="09:00">09:00</option>
+  <option value="10:00">10:00</option>
+  <option value="11:00">11:00</option>
+  <option value="12:00">12:00</option>
+  <option value="13:00">13:00</option>
+  <option value="14:00">14:00</option>
+  <option value="15:00">15:00</option>
+  <option value="16:00">16:00</option>
+  <option value="17:00">17:00</option>
+</select>
+
+    
+      <br> <br>
+      <button class="button-82-pushable" role="button">
+        <span class="button-82-shadow"></span>
+        <span class="button-82-edge"></span>
+        <span class="button-82-front text">
+          Zakaži
+        </span>
+      </button>
+
+
+</body>
+</html>    
