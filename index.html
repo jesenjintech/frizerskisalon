@@ -18,85 +18,22 @@
       <input type="text" id="prezime" name="prezime" placeholder="Unesite svoje prezime" required>
       <br>
     
-      <label for="broj_telefona">Broj telefona:</label>
-      <br>
-      <input type="tel" id="broj_telefona" name="broj_telefona" placeholder="Unesite svoj broj telefona" required>
-      <br> <br>
-      <label for="usluga">Izaberite uslugu:</label>
-<select name="usluga" id="usluga" required>
-  <option value="sisanje" label="Šišanje - 1000 RSD">Šišanje</option>
-  <option value="sisanje_masinicom" label="Šišanje mašinicom - 800 RSD">Šišanje mašinicom</option>
-  <option value="sisanje_do_glave" label="Šišanje do glave - 1200 RSD">Šišanje do glave</option>
-  <option value="skracivanje_brade" label="Skraćivanje brade - 500 RSD">Skraćivanje brade</option>
-  <option value="brijanje" label="Brijanje - 700 RSD">Brijanje</option>
-</select>
-      <br><br>
-      <label for="frizer">Izaberite frizera:</label>
-<select name="frizer" id="frizer" required>
-  <option value="Sale" label="Sale">Sale</option>
-  <option value="Vukan" label="Vukan">Vukan</option>
-  <option value="Crveni" label="Crveni">Crveni</option>
-</select>
+     
 
 
-      <br> <br>
-      <label for="datum">Izaberite datum:</label>
-      <br>
-      <input type="date" id="datum" name="datum" placeholder="dd.mm.yyyy" required>
-      <br> <br>
-      <label for="vreme">Izaberite vreme:</label>
-<br>
-<select name="vreme" id="vreme" required>
-  <option value="08:00">08:00</option>
-  <option value="09:00">09:00</option>
-  <option value="10:00">10:00</option>
-  <option value="11:00">11:00</option>
-  <option value="12:00">12:00</option>
-  <option value="13:00">13:00</option>
-  <option value="14:00">14:00</option>
-  <option value="15:00">15:00</option>
-  <option value="16:00">16:00</option>
-  <option value="17:00">17:00</option>
-</select>
+      
+
 
     
-      <br> <br>
+     <br> <br>
       <button class="button-82-pushable" role="button">
         <span class="button-82-shadow"></span>
         <span class="button-82-edge"></span>
         <span class="button-82-front text">
           Zakaži
         </span>
-      </button>
+        </button>
+        </body>
+</html>
         
-        <script>
-  // Selektujemo formu
-  const form = document.querySelector('form');
-
-  // Dodajemo event listener za submit forme
-  form.addEventListener('submit', e => {
-    // Sprečavamo da se stranica preusmeri
-    e.preventDefault();
     
-    // Obradjujemo podatke forme i šaljemo ih na server
-    fetch('/booking', {
-      method: 'POST',
-      body: new FormData(form)
-    }).then(response => {
-      // Proveravamo da li je zahtev uspešno obavljen
-      if (response.ok) {
-        // Ako je zahtev uspešno obavljen, prikazujemo poruku zahvalnosti
-        const div = document.createElement('div');
-        div.classList.add('alert', 'alert-success');
-        div.textContent = 'Hvala što ste rezervisali! Vaša rezervacija je potvrđena.';
-        form.before(div);
-      } else {
-        // Ovde bi se prikazala poruka o grešci ukoliko nije uspešno obavljen zahtev
-      }
-    });
-  });
-</script>
-
-
-</body>
-</html>    
